@@ -1,7 +1,10 @@
+import controller.Controlador;
+import view.VentanaPrincipal;
 
 public class Main {
     public static void main(String[] args) {
-    //this method is empty because im just openning it
-
+        VentanaPrincipal vista = new VentanaPrincipal();
+        Controlador controlador = new Controlador(vista);
+        vista.setVisible(true);
     }
 }
