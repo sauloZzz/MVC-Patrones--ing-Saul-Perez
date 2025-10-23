@@ -27,6 +27,39 @@ El objetivo principal es integrar tres patrones de diseño del catálogo de [Ref
 | **Comportamiento** | 🎮 **Command** | Encapsula acciones del usuario como objetos de comando (`CrearUsuarioCommand`, `EliminarUsuarioCommand`, etc.). | **Controlador** |
 
 ---
+## 🧩 Estructura
+Patrones/
+└── src/
 
-## 🏗️ Estructura de carpetas
+├──controller/
+
+│   ├──/AgregarUsuarioCommand.java       
+│   ├──/BuscarUsuarioCommand.java        
+│   ├──/EliminarUsuarioCommand.java     
+│   ├──/Command.java                     
+│   ├──/Controlador.java                 
+│   ├──/UsuarioControlador.java          
+
+├── model/
+
+│   ├── Usuario.java                     
+│   ├── AdminUsuario.java                
+│   ├── ClienteUsuario.java              
+│   ├── InvitadoUsuario.java             
+│   └── UsuarioFactory.java              
+
+├── view/
+
+│   ├── UsuarioVista.java                
+│   ├── VentanaPrincipal.java            
+│   ├── VistaDecorator.java              
+  ├── VistaDetallada.java    
+
+├── Main.java                        
+
+
+├── .gitignore
+
+└── README.md
+
 
