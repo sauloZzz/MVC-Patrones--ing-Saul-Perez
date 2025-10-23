@@ -1,4 +1,4 @@
 package model;
 
-public class usuario {
+public class Usuario {
 }
